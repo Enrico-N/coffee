@@ -1,19 +1,24 @@
-/* .cards {
+.card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   grid-gap: 2rem;
-} */
+}
 
-/* .card {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 4px;
   width: 320px;
   padding: 0.5rem;
-} */
+}
 
-/* img {
+.tags {
+  width: fit-content;
+  display: inline-block;
+}
+
+img {
   border-radius: 5px 5px 0 0;
   width: 100%;
 }
@@ -21,6 +26,9 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .container {
-  padding: 2px 16px;
+  width: 100%;
 }
-*/
+
+ul {
+  list-style-type: none;
+}

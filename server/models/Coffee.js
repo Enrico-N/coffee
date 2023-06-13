@@ -14,7 +14,7 @@ const CoffeeSchema = new Schema({
     unique: true,
   },
   coffeeKeyTag: { type: [String], unique: true },
-  description: [{ body: String }],
+  description: String,
   image: String,
   price: { type: Number, unique: true },
   coffeeOrigin: String,
@@ -25,8 +25,8 @@ const CoffeeSchema = new Schema({
     coffeeLike: Number,
     coffeeDislike: Number,
     coffeeDate: {
-      type: Date,
-      default: Date.now,
+      createAt: { type: Date, default: Date.now },
+      updatedAt: { type: Date, default: Date.now, set: (v) => v.Date.now() },
     },
   },
 });

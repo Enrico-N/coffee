@@ -13,8 +13,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Card />
-
-        <button>Add Coffee</button>
       </header>
     </div>
   );
