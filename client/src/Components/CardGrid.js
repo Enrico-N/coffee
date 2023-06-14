@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import instance from "../Api";
+import { instance, renderInstance } from "../Api";
 import "./CardGrid.css";
 
 function CardGrid() {
   const [data, setData] = useState([]);
 
   const coffee = async () => {
-    const res = await instance.get("/coffee");
+    const res = await renderInstance.get("/coffee");
     setData(res.data);
   };
 

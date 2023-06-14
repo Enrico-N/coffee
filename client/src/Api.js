@@ -1,7 +1,9 @@
 import axios from "axios";
 
-const instance = axios.create({
+export const instance = axios.create({
   baseURL: "http://localhost:3001",
 });
 
-export default instance;
+export const renderInstance = axios.create({
+  baseURL: "https://coffeeapp.onrender.com",
+});
